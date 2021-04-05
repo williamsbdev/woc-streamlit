@@ -17,10 +17,10 @@ by Joseph Buchdahl [@12Xpert](https://twitter.com/12xpert?lang=en)
 * **This app shows historical bets only.** Bets can be received in real-time (via e-mail). If you're interested please visit https://bettingiscool.com/the-wisdom-of-the-crowd/ and contact me at **contact@bettingiscool.com**
 """)
 
-# # Filters
-# st.sidebar.header('User Input Features')
+# Filters
+st.sidebar.header('User Input Features')
 
-# min_val = st.sidebar.slider(label='Minimum Value', min_value=0.00, max_value=0.25, value=0.05, step=0.01, format='%f')
+min_val = st.sidebar.slider(label='Minimum Value', min_value=0.00, max_value=0.25, value=0.05, step=0.01, format='%f')
 # odds_range = st.sidebar.select_slider(label='Odds Range', options=ODDS_INCREMENTS, value=[1.01, 1000])
 
 # unique_books = list(db.get_unique_books())
