@@ -1,6 +1,6 @@
 import calendar
 
-# import pandas as pd
+import pandas as pd
 import streamlit as st
 
 # import db
@@ -16,8 +16,6 @@ by Joseph Buchdahl [@12Xpert](https://twitter.com/12xpert?lang=en)
 * Sports betting analyst Joseph Buchdahl did a fantastic 20-page article explaining the approach in detail here https://www.football-data.co.uk/The_Wisdom_of_the_Crowd_updated.pdf
 * **This app shows historical bets only.** Bets can be received in real-time (via e-mail). If you're interested please visit https://bettingiscool.com/the-wisdom-of-the-crowd/ and contact me at **contact@bettingiscool.com**
 """)
-
-st.write(calendar.month_name[1])
 
 # # Filters
 # st.sidebar.header('User Input Features')
