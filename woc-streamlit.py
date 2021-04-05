@@ -32,19 +32,19 @@ selected_countries = st.sidebar.multiselect(label='Countries', options=sorted(un
 unique_leagues = list(db.get_unique_leagues())
 selected_leagues = st.sidebar.multiselect(label='Leagues', options=sorted(unique_leagues), default=unique_leagues)
 
-# if len(selected_sports) > 0 and len(selected_books) > 0 and len(selected_countries) > 0 and len(selected_leagues) > 0:
+if len(selected_sports) > 0 and len(selected_books) > 0 and len(selected_countries) > 0 and len(selected_leagues) > 0:
 
-#     # Display monthly stats
+    # Display monthly stats
 
-#     st.header('Performance by month')
-#     data = dict()
-#     data.update({'YEAR': list()})
-#     data.update({'MONTH': list()})
-#     data.update({'BETS': list()})
-#     data.update({'AVG_ODDS': list()})
-#     data.update({'PROFIT': list()})
-#     data.update({'ROI': list()})
-#     data.update({'CLV': list()})
+    st.header('Performance by month')
+    data = dict()
+    data.update({'YEAR': list()})
+    data.update({'MONTH': list()})
+    data.update({'BETS': list()})
+    data.update({'AVG_ODDS': list()})
+    data.update({'PROFIT': list()})
+    data.update({'ROI': list()})
+    data.update({'CLV': list()})
 
 #     for year in (2021, ):
 #         for month in range(1, 4):
