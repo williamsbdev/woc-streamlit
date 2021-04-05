@@ -17,7 +17,7 @@ by Joseph Buchdahl [@12Xpert](https://twitter.com/12xpert?lang=en)
 * **This app shows historical bets only.** Bets can be received in real-time (via e-mail). If you're interested please visit https://bettingiscool.com/the-wisdom-of-the-crowd/ and contact me at **contact@bettingiscool.com**
 """)
 
-print(calendar.month_name[1])
+st.write(calendar.month_name[1])
 
 # # Filters
 # st.sidebar.header('User Input Features')
