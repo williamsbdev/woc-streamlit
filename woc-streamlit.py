@@ -24,13 +24,13 @@ min_val = st.sidebar.slider(label='Minimum Value', min_value=0.00, max_value=0.2
 odds_range = st.sidebar.select_slider(label='Odds Range', options=ODDS_INCREMENTS, value=[1.01, 1000])
 
 unique_books = list(db.get_unique_books())
-# selected_books = st.sidebar.multiselect(label='Books', options=sorted(unique_books), default='BET365')
-# unique_sports = list(db.get_unique_sports())
-# selected_sports = st.sidebar.multiselect(label='Sports', options=sorted(unique_sports), default=unique_sports)
-# unique_countries = list(db.get_unique_countries())
-# selected_countries = st.sidebar.multiselect(label='Countries', options=sorted(unique_countries), default=unique_countries)
-# unique_leagues = list(db.get_unique_leagues())
-# selected_leagues = st.sidebar.multiselect(label='Leagues', options=sorted(unique_leagues), default=unique_leagues)
+selected_books = st.sidebar.multiselect(label='Books', options=sorted(unique_books), default='BET365')
+unique_sports = list(db.get_unique_sports())
+selected_sports = st.sidebar.multiselect(label='Sports', options=sorted(unique_sports), default=unique_sports)
+unique_countries = list(db.get_unique_countries())
+selected_countries = st.sidebar.multiselect(label='Countries', options=sorted(unique_countries), default=unique_countries)
+unique_leagues = list(db.get_unique_leagues())
+selected_leagues = st.sidebar.multiselect(label='Leagues', options=sorted(unique_leagues), default=unique_leagues)
 
 # if len(selected_sports) > 0 and len(selected_books) > 0 and len(selected_countries) > 0 and len(selected_leagues) > 0:
 
