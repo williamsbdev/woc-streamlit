@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 import db
-# from increments import ODDS_INCREMENTS
+from increments import ODDS_INCREMENTS
 
 # Title
 st.title('The Wisdom Of The Crowd')
