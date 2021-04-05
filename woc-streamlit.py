@@ -46,18 +46,18 @@ if len(selected_sports) > 0 and len(selected_books) > 0 and len(selected_countri
     data.update({'ROI': list()})
     data.update({'CLV': list()})
 
-#     for year in (2021, ):
-#         for month in range(1, 4):
-#             bets, avg_odds, profit, clv = db.get_monthly_stats(year=year, month=month, min_val=min_val, odds_range=odds_range, books=selected_books, sports=selected_sports, countries=selected_countries, leagues=selected_leagues)
+    for year in (2021, ):
+        for month in range(1, 4):
+            bets, avg_odds, profit, clv = db.get_monthly_stats(year=year, month=month, min_val=min_val, odds_range=odds_range, books=selected_books, sports=selected_sports, countries=selected_countries, leagues=selected_leagues)
 
-#             if bets and bets is not None and avg_odds and profit and clv:
-#                 data['YEAR'].append(year)
-#                 data['MONTH'].append(calendar.month_name[month])
-#                 data['BETS'].append(bets)
-#                 data['AVG_ODDS'].append(avg_odds)
-#                 data['PROFIT'].append(profit)
-#                 data['ROI'].append(profit / bets)
-#                 data['CLV'].append(clv)
+            if bets and bets is not None and avg_odds and profit and clv:
+                data['YEAR'].append(year)
+                data['MONTH'].append(calendar.month_name[month])
+                data['BETS'].append(bets)
+                data['AVG_ODDS'].append(avg_odds)
+                data['PROFIT'].append(profit)
+                data['ROI'].append(profit / bets)
+                data['CLV'].append(clv)
 
 #     avg_odds, clv = db.get_total_averages(min_val=min_val, odds_range=odds_range, books=selected_books, sports=selected_sports, countries=selected_countries, leagues=selected_leagues)
 #     if data['BETS']:
