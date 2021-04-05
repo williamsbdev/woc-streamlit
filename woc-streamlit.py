@@ -23,7 +23,7 @@ st.sidebar.header('User Input Features')
 min_val = st.sidebar.slider(label='Minimum Value', min_value=0.00, max_value=0.25, value=0.05, step=0.01, format='%f')
 odds_range = st.sidebar.select_slider(label='Odds Range', options=ODDS_INCREMENTS, value=[1.01, 1000])
 
-# unique_books = list(db.get_unique_books())
+unique_books = list(db.get_unique_books())
 # selected_books = st.sidebar.multiselect(label='Books', options=sorted(unique_books), default='BET365')
 # unique_sports = list(db.get_unique_sports())
 # selected_sports = st.sidebar.multiselect(label='Sports', options=sorted(unique_sports), default=unique_sports)
